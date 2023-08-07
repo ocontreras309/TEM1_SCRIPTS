@@ -14,6 +14,9 @@
                     <thead>
                         <tr>
                             <th>
+                                ID
+                            </th>
+                            <th>
                                 First name
                             </th>
                             <th>
@@ -31,6 +34,7 @@
                         
                         while ($row = $res->fetch_assoc()):
                     ?>
+                    <tr>
                         <td>
                             <?= $row['id'] ?>
                         </td>
@@ -43,6 +47,7 @@
                         <td>
                             <?= $row['semester'] ?>
                         </td>
+                    </tr>
                     <?php
                         endwhile;
                         $conn->close();
