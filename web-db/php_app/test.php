@@ -23,6 +23,9 @@
                                 Last name
                             </th>
                             <th>
+                                City
+                            </th>
+                            <th>
                                 Semester
                             </th>
                         </tr>
@@ -43,6 +46,9 @@
                         </td>
                         <td>
                             <?= $row['last_name'] ?>
+                        </td>
+                        <td>
+                            <?= $row['city'] ?>
                         </td>
                         <td>
                             <?= $row['semester'] ?>
