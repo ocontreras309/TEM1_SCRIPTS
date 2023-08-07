@@ -17,14 +17,14 @@ mysql = MySQL(app)
 @app.route('/', methods=['GET'])
 def student_list_json():
     cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-    cursor.execute('SELECT id, first_name, last_name, semester FROM student')
+    cursor.execute('SELECT id, first_name, last_name, city, semester FROM student')
     data = cursor.fetchall()
     return json.dumps(data)
 
 @app.route('/studentlist', methods=['GET'])
 def student_list():
     cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-    cursor.execute('SELECT id, first_name, last_name, semester FROM student')
+    cursor.execute('SELECT id, first_name, last_name, city, semester FROM student')
     data = cursor.fetchall()
     return render_template('list.html', students=data)
 

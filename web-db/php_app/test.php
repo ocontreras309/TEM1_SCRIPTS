@@ -33,7 +33,7 @@
                     <tbody>
                     <?php
                         $conn = new mysqli("web-db-service", "example_user", "mysql", "example", "8306");
-                        $res = $conn->query("SELECT id, first_name, last_name, semester FROM student");
+                        $res = $conn->query("SELECT id, first_name, last_name, city, semester FROM student");
                         
                         while ($row = $res->fetch_assoc()):
                     ?>
