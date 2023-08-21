@@ -33,7 +33,7 @@ spec:
   #local: 
   hostPath:
     #path: "/run/desktop/mnt/host/d/Kubernetes/web-db-finished/php_app"
-    path: "/home/ocontreras/Documents/UNIVERSITY_CLASSES/UNIVALLE/II-2023/TEM_I-A/DOCKER_KUBERNETES/Kubernetes/web-db-finished/php_app"
+    path: "/home/ocontreras/Kubernetes/web-db/php_app"
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -79,7 +79,7 @@ spec:
   #local: 
   hostPath:
     #path: "/run/desktop/mnt/host/d/Kubernetes/web-db-finished/flask_app"
-    path: "/home/ocontreras/Documents/UNIVERSITY_CLASSES/UNIVALLE/II-2023/TEM_I-A/DOCKER_KUBERNETES/Kubernetes/web-db-finished/flask_app"
+    path: "/home/ocontreras/Kubernetes/web-db/flask_app"
   nodeAffinity:
     required:
       nodeSelectorTerms:
